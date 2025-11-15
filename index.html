@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProShop – Modern E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./prime-website.css">
+    <link rel="stylesheet" href="./prime.css">
+    <link rel="stylesheet" href="./prime.html">
+    <link rel="stylesheet" href="./prime-tech.html">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">ProShop</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+        </div>
+
+        <div class="cart-btn" id="cartBtn">
+            🛒 <span id="cartCount">0</span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Quality Products Delivered Fast</h1>
+        <p>Shop top-notch items at the best prices</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <h2>Featured Products</h2>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="https://picsum.photos/300?1" alt="">
+                <h3>Wireless Headset</h3>
+                <p>$35</p>
+                <button onclick="addToCart('Wireless Headset', 35)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/300?2" alt="">
+                <h3>Smart Watch</h3>
+                <p>$50</p>
+                <button onclick="addToCart('Smart Watch', 50)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/300?3" alt="">
+                <h3>Bluetooth Speaker</h3>
+                <p>$28</p>
+                <button onclick="addToCart('Bluetooth Speaker', 28)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/300?4" alt="">
+                <h3>Gaming Mouse</h3>
+                <p>$18</p>
+                <button onclick="addToCart('Gaming Mouse', 18)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CART DRAWER -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="close-cart" id="closeCart">X</span>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer">
+            <h3>Total: $<span id="cartTotal">0</span></h3>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="./prime-tech.js"></script>
+    <script src="./prime-website-second.js"></script>
+</body>
+</html>
